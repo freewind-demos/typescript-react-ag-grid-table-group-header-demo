@@ -1,5 +1,5 @@
-TypeScript React "Ag Grid" Demo
-=================================
+TypeScript React "Ag Grid" Table Group Headers Demo
+===================================================
 
 ```
 npm install

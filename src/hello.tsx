@@ -1,22 +1,27 @@
-import React, { Component } from 'react';
-import { AgGridReact } from 'ag-grid-react';
+import React, {Component} from 'react';
+import {AgGridReact} from 'ag-grid-react';
 import 'ag-grid-community/dist/styles/ag-grid.css';
 import 'ag-grid-community/dist/styles/ag-theme-balham.css';
 
 const columnDefs = [{
-  headerName: "Make", field: "make"
+  headerName: "User Name",
+  children: [{
+    headerName: "First Name",
+    field: 'firstName'
+  }, {
+    headerName: "Last Name",
+    field: 'lastName'
+  }], field: "make"
 }, {
-  headerName: "Model", field: "model"
-}, {
-  headerName: "Price", field: "price"
+  headerName: "Age", field: "age"
 }]
 
 const rowData = [{
-    make: "Toyota", model: "Celica", price: 35000
+    firstName: "AAA", lastName:"BBB", age: 37
   }, {
-    make: "Ford", model: "Mondeo", price: 32000
+  firstName: "CCC", lastName:"DDD", age: 73
   }, {
-    make: "Porsche", model: "Boxter", price: 72000
+  firstName: "EEE", lastName:"FFF", age: 25
   }]
 ;
 
